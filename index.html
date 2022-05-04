@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3e6ec048e2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="head-container">
+                    <h1>Generate a <br><span class="green">random password</span></h1>
+                    <p>Never use an insecure password again.</p>
+                    <button id="button"><i class="fa-solid fa-bolt"></i>Generate passwords</button>
+                </div>
+                <div class="settings-container" id="settings">
+                    <div class="setting-input">
+                        <label for="length">Length</label>
+                        <input type="number" id="length" value="16" min="8" max="64" />    
+                    </div>
+                    <div class="setting-input">
+                        <label for="numbers">Include Numbers</label>
+                        <input type="checkbox" id="numbers" checked />
+                    </div>
+                    <div class="setting-input">
+                        <label for="symbols">Include Symbols</label>
+                        <input type="checkbox" id="symbols" checked />
+                    </div>
+                  </div>
+                <hr class="separation-line"></hr>
+                <div class="bottom-container">
+                    <div class="col">
+                        <input class="passwordtext" type="text">
+                        <input class="passwordtext" type="text">
+                    </div>
+                    <div class="col">
+                        <input class="passwordtext" type="text">
+                        <input class="passwordtext" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
